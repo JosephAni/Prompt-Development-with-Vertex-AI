@@ -8,7 +8,11 @@ In this section, you will learn about the Vertex AI platform, Generative AI Stud
 
 ## What is Vertex AI?
 
-Vertex AI is a machine learning platform that helps you build, deploy, and scale machine learning models. It provides a unified experience for data scientists, machine learning engineers, and operations engineers, making it easier to collaborate and manage your ML projects. Here are some of the key features of Vertex AI: • AutoML: AutoML makes it easy to train machine learning models without writing any code. You simply provide your data, and AutoML will automatically select the best algorithm and hyperparameters for your model. • Explainable AI: Vertex AI Explainable AI helps you understand how your machine learning models make predictions. This can be helpful for debugging models and ensuring that they are making fair and unbiased predictions. • Continuous Monitoring: Vertex AI Continuous Monitoring helps you track the performance of your machine learning models over time. This can help you identify problems early on and take corrective action before your models start to degrade. • Deployment: Vertex AI makes it easy to deploy your machine learning models into production. You can deploy models to a variety of endpoints, including Google Cloud Functions, App Engine, and Cloud Run. Vertex AI is a powerful tool for building and deploying machine learning models. If you're looking for a way to simplify your ML workflow and improve the performance of your models, then Vertex AI is a great option.
+Vertex AI is a machine learning platform that helps you build, deploy, and scale machine learning models. It provides a unified experience for data scientists, machine learning engineers, and operations engineers, making it easier to collaborate and manage your ML projects.
+Here are some of the key features of Vertex AI:
+• **AutoML:** AutoML makes it easy to train machine learning models without writing any code. You simply provide your data, and AutoML will automatically select the best algorithm and hyperparameters for your model.
+• **Explainable AI:** Vertex AI Explainable AI helps you understand how your machine learning models make predictions. This can be helpful for debugging models and ensuring that they are making fair and unbiased predictions. • Continuous Monitoring: Vertex AI Continuous Monitoring helps you track the performance of your machine learning models over time. This can help you identify problems early on and take corrective action before your models start to degrade.
+• **Deployment:** Vertex AI makes it easy to deploy your machine learning models into production. You can deploy models to a variety of endpoints, including Google Cloud Functions, App Engine, and Cloud Run. Vertex AI is a powerful tool for building and deploying machine learning models. If you're looking for a way to simplify your ML workflow and improve the performance of your models, then Vertex AI is a great option.
 
 ## What is Generative AI Studio?
 
@@ -27,6 +31,7 @@ Generative AI Studio is a Google Cloud console tool for rapidly prototyping and 
 ## What are Foundation models?
 
 Foundation models are large, pre-trained machine learning models trained on a massive dataset of unlabeled data. They are designed to be adapted to a wide range of downstream tasks, such as natural language processing, computer vision, and question-answering.
+![foundation model](images/foundationmodel.png)
 Foundation models are trained using a technique called self-supervised learning. In self-supervised learning, the model is not given any labels for the data that it is trained on. Instead, the model learns to predict relationships between different parts of the data. This allows the model to learn more general representations of the data, which makes it easier to adapt to new tasks. Foundation models have been shown to be very effective at a variety of tasks.
 For example, the GPT-3 foundation model has been shown to be able to generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way.
 Foundational models are still under development, but they have the potential to revolutionize the way that AI is used. They could be used to create new applications that are not possible with today's AI technology.
@@ -42,16 +47,16 @@ Now let's dive into using Vertex AI for a hands-on tutorial.
 1. Create a Google cloud account
 2. Then **Open Google Console** button After a few moments, the Cloud Console opens in this tab
    Click on the drop-down button on the right of Google cloud
-   ![Alt text](images/googleclouddropdown.png)
+   ![google cloud dropdown](images/googleclouddropdown.png)
 3. Next, type the name of the project you want to create.
-   ![Alt text](images/createaccount.png)
+   ![create account](images/createaccount.png)
 
 ## Enable the Vertex AI API
 
 1. In the Google Cloud Console, type **Vertex AI API** in the top search bar.
-   ![Alt text](images/vertexaiapi.png)
+   ![vaertex ai api](images/vertexaiapi.png)
 2. Click on the result for **Vertex AI API** under Marketplace.
-   ![Alt text](images/vertexaipaimerketplace.png)
+   ![vertex ai marketplace](images/vertexaipaimerketplace.png)
 3. Click **Enable**.
 
 ## Task 1: Text prompts
@@ -62,23 +67,23 @@ Text Prompt lets you designs prompts for tasks relevant to your business use cas
 2. Click on **Vertex AI**.
 3. In the Vertex AI menu, under **Generative AI Studio** , click **Language**.
 4. Click on the **+ Text Prompt** icon.
-   ![Alt text](images/textprompt.png)
+   ![text prompt](images/textprompt.png)
 5. You will be redirected to the following page.
-   ![Alt text](images/promptdesign.png)
+   ![prompt design](images/promptdesign.png)
 
 **Prompt design** is the process of figuring out and designing the best input text (prompt) to get the desired response back from a language model. The model will provide a response based on how you structure your prompt. For example, if you ask a question, the model will try to answer it. There is no one best way to design prompts, but there are three general methods that you can use to shape the model's response in a way that you desire:
-![Alt text](images/prompting.png)
+![prompting](images/prompting.png)
 
 1. **Zero-shot Prompting**
-   ![Alt text](images/zeroshotprompting.png)
+   ![zero shot prompting](images/zeroshotprompting.png)
    Can be used:
    The LLM can be prompted to generate creative text, such as poems, code, scripts, musical pieces, emails, letters, etc. For example, you could prompt the LLM with "Write a poem about a cat who goes on an adventure", and it would generate a poem about a cat who goes on an adventure.
 2. **One-shot Prompting**
-   ![Alt text](images/oneshotprompting.png)
+   ![one shot prompting](images/oneshotprompting.png)
    Can be used:
    One-shot prompting is a powerful technique that can be used to train LLMs to perform a variety of tasks. It is beneficial when there is limited data available for the task. However, it is important to note that one-shot prompting is not always perfect, and the LLM may not always be able to perform the task correctly. The quality of the results will depend on the quality of the prompt and the example
 3. **Few-shot Prompting**
-   ![Alt text](images/fewshotprompting.png)
+   ![few shot prompting](images/fewshotprompting.png)
    Can be used:
    To train an LLM to write poems about cats, you could provide the LLM with a prompt like "Write a poem about a cat" and a few examples of poems about cats.
    To train an LLM to translate languages, you could provide the LLM with a prompt like "Translate this sentence from English to French" and a few examples of sentences that have been translated from English to French.
@@ -95,21 +100,21 @@ Let's try zero-shot prompting. You can use this mode to design prompts.
 I will be using the following prompt to explore zero-shot; you can follow along with me: Copy and paste the prompt below into the text field, and then click on the SUBMIT button.
 
 [copy]("What is vertex AI?")
-![Alt text](images/freeform.png)
+![freeform](images/freeform.png)
 The model will be able to respond accordingly to the term in the prompt gallery.
 Examples to explore when you adjust the parameters on the right.
 
 1. Adjust the token limit parameter to 1 and click the submit button.
-   ![Alt text](images/tokenlimit1.png)
+   ![token limit1](images/tokenlimit1.png)
 
 2. Adjust the Token limit parameter to 1024 and click the submit button.
-   ![Alt text](images/tokenlimit2.png)
+   ![token limit2](images/tokenlimit2.png)
 
 3. Adjust the Temperature parameter to 0.5 and click the submit button.
-   ![Alt text](images/temperaturelimit1.png)
+   ![temperature limit1](images/temperaturelimit1.png)
 
 4. Adjust the Temperature parameter to 1.0 and click the submit button.
-   ![Alt text](images/temperaturelinit2.png)
+   ![temperature limit2](images/temperaturelinit2.png)
 
 As you can see, we are having unique responses as the parameters change.
 
@@ -122,7 +127,7 @@ We will be asking the model to complete a sentence.
 1. Click on the **STRUCTURED** tab.
 2. Under the Test field, write the following in the INPUT field.
 3. Click on the **SUBMIT** button.
-   ![Alt text](images/structuredmode.png)
+   ![structured mode](images/structuredmode.png)
 4. You will be able to see the result in the **OUTPUT**.
 
 Now let's try to influence the model with one-shot prompting by adding an example for the model to learn.
@@ -135,7 +140,7 @@ In the **Examples** field.
    [copy](green)
 
 3. Click on the SUBMIT button.
-   ![Alt text](images/examplesfield.png)
+   ![examlples field](images/examplesfield.png)
 
 Congratulations! You’ve successfully influenced the response of the model.🥳
 
@@ -144,29 +149,29 @@ Congratulations! You’ve successfully influenced the response of the model.🥳
 We would now perform sentiment analysis on the generated responses. Such as determining the reviews of a meal in a restaurant as positive or negative.
 
 1. Under the Examples field, delete the previous prompts for INPUT and OUTPUT for green grass.
-   ![Alt text](images/sentimentanalysis.png)
+   ![sentimental analysis](images/sentimentanalysis.png)
    The model did not have enough data to know it was supposed to use sentiment analysis.By providing the model with a few examples of sentiment analysis.
 
 2. Copy the following prompt to the INPUT field, under the TEST field.
-   ![Alt text](images/inputoutputtest.png)
+   ![input output test](images/inputoutputtest.png)
 
 3. Click on the Submit button.
-   ![Alt text](images/sentimentanalysis2.png)
+   ![senteminatal analysis2](images/sentimentanalysis2.png)
 
 As you can see, the model is able to use sentiment analysis. The input text “It was a time well spent!” got labeled as positive.
 To save the prompt you designed, click on the **SAVE** button and name it what you like, such as the sentiment analysis test.
-![Alt text](images/sentimentanalysistest.png)
+![sentimental analysis test](images/sentimentanalysistest.png)
 You can access the saved prompt under the **MY PROMPTS** tab.
-![Alt text](images/mypromptstab.png)
+![my prompts tab](images/mypromptstab.png)
 
 **Task 2: Chat prompt**
 The chat prompt creates conversations between the user and the model. Tracking the user input and the model's output.
 
 1. Return to the **Language** page.
-   ![Alt text](images/chatprompt.png)
+   ![chat prompt](images/chatprompt.png)
 2. Click on the **+ TEXT CHAT** button to create a new chat prompt.
 3. A new chat prompt page will open.
-   ![Alt text](images/chatpromptpage.png)
+   ![chat prompt page](images/chatpromptpage.png)
 
 Great! We will now train the model on the chat prompt by adding context to the model to produce a response.
 
@@ -177,7 +182,7 @@ Great! We will now train the model on the chat prompt by adding context to the m
 2. Copy the following to the chatbox under Responses.
    [copy](My meal was not great)
 3. Click Enter key or click the Send message button (right arrow-head button ➡️).
-   ![Alt text](images/responses.png)
+   ![responses](images/responses.png)
 
 Congarulations!
 You learned how to create and test a prompt, create a conversation, and explore the prompt gallery. You have taken the first step to start your journey using Generative AI Studio and other Generative AI development tools!
