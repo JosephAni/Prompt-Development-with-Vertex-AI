@@ -187,4 +187,4 @@ Great! We will now train the model on the chat prompt by adding context to the m
 Congarulations!
 You learned how to create and test a prompt, create a conversation, and explore the prompt gallery. You have taken the first step to start your journey using Generative AI Studio and other Generative AI development tools!
 
-<div style="width:480px"><iframe allow="fullscreen" frameBorder="0" height="320" src="https://giphy.com/embed/uh26nURBaRpBzy8YRo/video" width="480"></iframe></div>
+<div style="width:480px"><iframe allow="fullscreen" frameBorder="0" height="320" src="https://giphy.com/embed/uh26nURBaRpBzy8YRo/video" width="480"></iframe></div>.
