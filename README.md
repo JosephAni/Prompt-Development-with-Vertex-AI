@@ -1,4 +1,4 @@
-# Introduction to Vertex AI and Generative AI Studio
+# Prompt Development with Vertex AI.
 
 With the current ways of generating new and unique content using LLM. This section will introduce the Vertex AI platform and the Generative AI Studio tool. It will also provide an overview of foundational models and how they can be used to build, tune, and deploy generative AI applications.
 
